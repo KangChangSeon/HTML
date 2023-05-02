@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 만들기</title>
+</head>
+<body>
+    <h3>1학기 성적</h3>
+    <hr>
+    <table border="1">
+        <caption>1학기 성적</caption>
+        <thead>
+            <tr><th>이름</th><th>HTML</th><th>CSS</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>홍길동</td><td>90</td><td rowspan="2"align="center"><img src="elvis.jpg" width="50" height="50"></td></tr>
+						<!--rowspan="2" 으로 세로 2줄 합침-->
+            <tr><td>홍일동</td><td>85</td></tr>
+            <tr><td>홍이동</td><td colspan="2" align="center">70</td></tr>
+						<!--colspan="2" 으로 가로줄 2줄 합침-->
+        </tbody>
+        <tfoot>
+            <tr><th>합</th><th>245</th><th>283</th></tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
