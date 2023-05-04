@@ -7,11 +7,66 @@
     <title>main web page</title>
 </head>
 <style>
+    body, html { width: 100%; height: 100%;}
     body { background-image: url(4k-g8abb92d0b_1920.jpg);}
-    h1 { text-align: center; }
+    h1 { text-align: center; color: white;}
+    span { text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;}
+    hr { border: 2px solid; }
+    tr,th { text-align: center; padding: 10px; border: 1px solid black; }
+    table { border-collapse: collapse; margin: 20px auto; color: white; width: 50%; min-height: 100%;}
+    th { color: black; background-color: lightgrey;}
+    td { color: black; background-color: white;}
+
 </style>
 <body>
-    <h1>NOTION 바로가기</h1>
+    <h1><span>NOTION 바로가기<span></span></h1>
     <hr>
+    <div>
+        <form>
+            <table align="left">
+                <thead>
+                  <tr>
+                    <th><span style="color:white">공부 목록</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>HTML5</td>
+                  </tr>
+                  <tr>
+                    <td>SQL</td>
+                  </tr>
+                  <tr>
+                    <td>Network</td>
+                  </tr>
+                  <tr>
+                    <td>Python</td>
+                  </tr>
+                  <tr>
+                    <td>JAVA</td>
+                  </tr>
+                  <tr>
+                    <td>Enlglish</td>
+                  </tr>
+                  <tr>
+                    <td>AI</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <table align="right">
+                <thead>
+                    <tr>
+                        <th>공부 일자 및 내용</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML5 9주차 / 23-05-03</td>
+                    </tr>
+                </tbody>
+              </table>
+        </form>
+    </div>
 </body>
 </html>
