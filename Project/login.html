@@ -47,27 +47,12 @@
     <div class="container">
       <h2>로그인 화면</h2>
       <form>
-        <label for="username">Username:</label>
+        <label for="username">ID:</label>
         <input type="text" id="username" name="username" required>
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
-        <button type="submit">Login</button>
+        <button type="submit"><a href="main.html">Login</a></button>
       </form>
     </div>
-
-    <script>
-        function checkLogin() {
-          var username = document.getElementById("username").value;
-          var password = document.getElementById("password").value;
-  
-          if (username == "root" && password == "0000") {
-            window.location.href = "main.html";
-            return true;
-          } else {
-            alert("ID 또는 Password를 잘못 입력하셨습니다.");
-            return false;
-          }
-        }
-    </script>
   </body>
 </html>
