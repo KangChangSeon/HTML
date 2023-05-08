@@ -8,69 +8,75 @@
 </head>
 <style>
     @import url(fonts.css);
-    body, html { font-family: font1; width: 100%; height: 100%;}
-    body { background-image: url(1903___1093872597.jpg);}
-    h1 { text-align: center; color: white;}
+    body, html { 
+      font-family: font1; 
+      width: 100%; 
+      height: 100%;  
+      margin: 0; 
+      padding: 0;}
+    h1 { margin-left: 40%;}
     span { text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;}
     hr { border: 2px solid; }
-    tr,th { text-align: center; padding: 10px; border: 1px solid black; }
-    table { border-collapse: collapse; margin: 20px auto; color: white; width: 50%; min-height: 100%;}
-    th { color: black; background-color: lightgrey;}
-    td { color: black; background-color: white;}
+    p { text-align: center; size: 10px;}
+    form {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			margin-top: 50px;
+		}
+
+		label {
+			font-weight: bold;
+			margin-right: 10px;
+		}
+
+		input[type=text], input[type=tel], input[type=number] {
+			margin-right: 20px;
+			padding: 10px;
+			font-size: 16px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+		}
+
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			font-size: 16px;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
 
 </style>
 <body>
-    <h1><span>NOTION 바로가기<span></span></h1>
-    <hr>
+    <h1><video autoplay loop muted width="300" height="300"><source src="송부 식당 로고.mp4" type="video/mp4"></video></h1>
+    <hr><br>
     <div>
-        <form>
-            <table align="left">
-                <thead>
-                  <tr>
-                    <th><span style="color:white">공부 목록</span></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>HTML5</td>
-                  </tr>
-                  <tr>
-                    <td>SQL</td>
-                  </tr>
-                  <tr>
-                    <td>Network</td>
-                  </tr>
-                  <tr>
-                    <td>Python</td>
-                  </tr>
-                  <tr>
-                    <td>JAVA</td>
-                  </tr>
-                  <tr>
-                    <td>Enlglish</td>
-                  </tr>
-                  <tr>
-                    <td>AI</td>
-                  </tr>
-                </tbody>
-              </table>
-              
-              <table align="right">
-                <thead>
-                    <tr>
-                        <th>공부 일자 및 내용</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>네트워크 10주차 / 23-05-04</td>
-                    </tr>
-                    <tr>
-                        <td>HTML5 9주차 / 23-05-03</td>
-                    </tr>
-                </tbody>
-              </table>
-        </form>
+      <table>
+        <thead>
+          <h3 style="text-align: center;">레스토랑 KANG'S 에 오신 것을 환영 합니다.</h3>
+          <p>고객님의 다양한 취향을 만족시킬 수 있는 샐러드, 스테이크, 디저트, 파스타를 제공하는<br>
+            저희 레스토랑에서는 항상 최상의 서비스를 제공합니다. 새로운 맛과 경험을 찾으시는 분들께 추천드립니다.</p><br><br>
+        </thead>
+        <tbody align="center">
+          <p></p>
+          <form action="#" style="padding: 50%;">
+            <label for="name">이름:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="phone">전화번호:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="time">예약 시간:</label>
+            <input type="time" id="time" name="time" required>
+            <label for="people">예약 인원:</label>
+            <input type="number" id="people" name="people" min="1" max="10" required>
+            <input type="submit" value="예약하기">
+          </form>
+        </tbody>
+        <tfoot>
+        </tfoot>
+      </table>
     </div>
 </body>
 </html>
