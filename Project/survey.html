@@ -53,6 +53,17 @@
     input[type=radio] {
       margin-left: 12%;
     }
+    input[type=button] {
+      margin-right: 20px;
+      margin-left: 45%;
+			background-color: #4CAF50;
+			color: white;
+			font-size: 16px;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+    }
 
     fieldset {
       margin-left: 10%;
@@ -129,7 +140,7 @@
               <legend>개선점</legend>
               <p>저희 레스토랑을 사용하신 뒤 개선할 부분이 있으셨나요?</p>
               <p><textarea cols="100" rows="20"></textarea></p>
-              <button type="submit"><a href="thx.html" target="_self">제출하기</a>
+              <input type="button" onclick="location.href='thx.html'" value="제출하기">
             </fieldset><br>
             
         </tbody>
