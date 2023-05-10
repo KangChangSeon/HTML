@@ -4,137 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main web page</title>
-</head>
-<style>
-    @import url(fonts.css);
-    body, html { 
-      font-family: font1; 
-      width: 100%; 
-      height: 100%;  
-      margin: 0; 
-      padding: 0;}
-    h1 { margin-left: 40%;}
-    hr { border: 2px solid; margin: 0 auto; margin-left: 2%; margin-right: 2%;}
-    p { text-align: center; size: 10px;}
-    form {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			justify-content: center;
-			margin-top: 50px;
-		}
-
-		label {
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+        @import url(fonts.css);
+        body, html { 
+            font-family: font1; 
+            width: 100%; 
+            height: 100%;  
+            margin: 0; 
+            padding: 0;}
+            label {
 			font-weight: bold;
 			margin-right: 10px;
 		}
-
-		input[type=text], input[type=tel], input[type=number] {
-			margin-right: 20px;
-			padding: 10px;
-			font-size: 16px;
-			border: 1px solid #ccc;
-			border-radius: 4px;
-		}
-    input [type=time] {
-      margin-right: 40px;
-      font-size: 16px;
-      border: 1px solid #ccc;
-			border-radius: 4px;
-    }
 		input[type=submit] {
-      margin-right: 20px;
-			background-color: #4CAF50;
-			color: white;
-			font-size: 16px;
-			padding: 10px 20px;
-			border: none;
-			border-radius: 4px;
 			cursor: pointer;
 		}
-    img {
-      margin-left: 20%;
-      margin-right: -30%;
-    }
-    li {
-      font-size: small;
-    }
-    button{
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-</style>
+        input[type=submit]{
+            border-radius: 4px;
+            background-color: #4CAF50;
+        }
+        button[type=submit]{
+            border-radius: 4px;
+        }
+        
+    </style>
+</head>
 <body>
-    <h1><video autoplay loop muted width="300" height="300"><source src="송부 식당 로고.mp4" type="video/mp4"></video></h1>
-    <p style="margin-left:80%;"><button type="submit" onclick="window.open('survey.html')">설문조사</button></p>
-    <hr><br>
-    <div>
-      <table>
-        <thead>
-          <h3 style="text-align: center;">레스토랑 KANG'S 에 오신 것을 환영 합니다.</h3>
-          <p>고객님의 다양한 취향을 만족시킬 수 있는 샐러드, 스테이크, 디저트, 파스타를 제공하는<br>
-            저희 레스토랑에서는 항상 최상의 서비스를 제공합니다. 새로운 맛과 경험을 찾으시는 분들께 추천드립니다.<br>
-            이미지를 클릭하실 경우 메뉴판을 보실 수 있으며, 홈페이지 아래에서 예약하실 수 있습니다.<br>
-            식사를 마친 고객님께서는 오른쪽 상단에 있는 설문조사에 참여해주시면 감사하겠습니다.</p><br><br>
-        </thead>
-        <hr>
-        <tbody>
-          <form>
-            <a href="메뉴1.png" target="_blank"><img src="Salad & Dessert.png" align="left" width="400" height="400"></a><br>
-            <p>리코타 치즈 샐러드</p>
-            <p style="font-size: small;">수제 리코타 치즈가 듬뿍 올려진 향긋한 샐러드</p>
-            <p>케이준 치킨 샐러드</p>
-            <p style="font-size: small;">순살치킨과 신선한 야채를 같이 먹을 수 있는 샐러드</p><br>
-            <p>오레오 아이스크림</p>
-            <p>아포카토</p><br>
-            <p>탄산음료</p>
-            <p>커피 & 티</p>
-            <p>Beer</p><br><br>
-          </form>
-        <hr><br>
-          <form>
-            <a href="메뉴2.png" target="_blank"><img src="steak & lobster.png" align="left" width="400" height="400"></a>
-            <p>등심 스테이크</p>
-            <p style="font-size: small;">레드와인 소스를 곁들인 등심 스테이크</p>
-            <p>안심 스테이크</p>
-            <p style="font-size: small;">허브 솔트로 구워 낸 안심 스테이크</p><br>
-            <p>등심스테이크 & 안심스테이크 코스</p>
-            <p style="font-size: small;">식전빵, 오늘의 스프, 샐러드, 커피 or 음료</p><br>
-            <p>Lobster & Steak</p>
-            <p style="font-size: small;">식전빵, 오늘의 스프, 샐러드, 커피 or 음료</p>
-            <p style="font-size: small;">안심 스테이크는 티라미수 케이크가 추가됩니다.</p><br><br>
-          </form>
-        <hr><br>
-          <form>
-            <a href="메뉴3.png" target="_blank"><img src="pasta.png" align="left" width="400" height="400"></a>
-            <p>크로산테</p>
-            <p style="font-size: small;">해산물과 누룽지를 곁들여 매콤하게 맛을 낸 토마토 파스타</p>
-            <p>디마레 토마토 스페셜</p>
-            <p style="font-size: small;">토마토 소스와 해살물 & 치즈로 맛을 낸 오븐 파스타</p><br>
-            <p>만조 크림 파스타</p>
-            <p style="font-size: small;">안심과 버섯 크림이 어우러진 고소한 파스타</p><br>
-            <p>알리오 올리오</p>
-            <p style="font-size: small;">마늘과 페퍼론치노로 맛을 낸 파스타</p><br><br><br><br>
-          </form>
-        <hr><br><br>
-        </tbody>
-        <tfoot>
-          <form>
-            <p><strong>Reservation</strong></p><br>
-            <label for="name" style="margin-left:15%;">이름:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="phone">전화번호:</label>
-            <input type="tel" id="phone" name="phone" required>
-            <label for="time">예약 시간:</label>
-            <input type="time" id="time" name="time" required style="margin-right:20px;">
-            <label for="people">예약 인원:</label>
-            <input type="number" id="people" name="people" min="1" max="10" required>
-            <input type="submit" value="예약하기">
-          </form><br><br><br>
-        </tfoot>
-      </table>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1><video autoplay loop muted width="300" height="300"><source src="송부 식당 로고.mp4" type="video/mp4"></video></h1>
+                <p style="margin-left:80%;"><button type="submit" onclick="window.open('survey.html')">설문조사</button></p>
+                <hr><br>
+            </div>
+            <div class="col-lg-12">
+                <h3 style="text-align: center;">레스토랑 KANG'S 에 오신 것을 환영 합니다.</h3>
+                <p>고객님의 다양한 취향을 만족시킬 수 있는 샐러드, 스테이크, 디저트, 파스타를 제공하는<br>
+                저희 레스토랑에서는 항상 최상의 서비스를 제공합니다. 새로운 맛과 경험을 찾으시는 분들께 추천드립니다.<br>
+                이미지를 클릭하실 경우 메뉴판을 보실 수 있으며, 홈페이지 아래에서 예약하실 수 있습니다.<br>
+                식사를 마친 고객님께서는 오른쪽 상단에 있는 설문조사에 참여해주시면 감사하겠습니다.</p><br><br>
+            </div>
+            <hr>
+            <div class="col-lg-6 col-mn-3">
+                    <a href="메뉴1.png" t3arget="_blank"><img src="Salad & Dessert.png" width="400" height="400"></a><br>
+            </div>
+            <div class="col-lg-6 col-mn-3">
+                    <p>리코타 치즈 샐러드</p>
+                    <p style="font-size: small;">수제 리코타 치즈가 듬뿍 올려진 향긋한 샐러드</p>
+                    <p>케이준 치킨 샐러드</p>
+                    <p style="font-size: small;">순살치킨과 신선한 야채를 같이 먹을 수 있는 샐러드</p><br>
+                    <p>오레오 아이스크림</p>
+                    <p>아포카토</p><br>
+                    <p>탄산음료</p>
+                    <p>커피 & 티</p>
+                    <p>Beer</p><br>
+            </div>
+            <hr>
+            <div class="col-lg-6 col-mn-3">
+                <a href="메뉴2.png" target="_blank"><img src="steak & lobster.png" width="400" height="400"></a>
+            </div>
+            <div class="col-lg-6 col-mn-3">
+                <p>등심 스테이크</p>
+                <p style="font-size: small;">레드와인 소스를 곁들인 등심 스테이크</p>
+                <p>안심 스테이크</p>
+                <p style="font-size: small;">허브 솔트로 구워 낸 안심 스테이크</p><br>
+                <p>등심스테이크 & 안심스테이크 코스</p>
+                <p style="font-size: small;">식전빵, 오늘의 스프, 샐러드, 커피 or 음료</p><br>
+                <p>Lobster & Steak</p>
+                <p style="font-size: small;">식전빵, 오늘의 스프, 샐러드, 커피 or 음료</p>
+                <p style="font-size: small;">안심 스테이크는 티라미수 케이크가 추가됩니다.</p><br>
+            </div>
+            <hr>
+            <div class="col-lg-6 col-mn-3">
+                <a href="메뉴3.png" target="_blank"><img src="pasta.png" width="400" height="400"></a>
+            </div>
+            <div class="col-lg-6 col-mn-3">
+                <p>크로산테</p>
+                <p style="font-size: small;">해산물과 누룽지를 곁들여 매콤하게 맛을 낸 토마토 파스타</p>
+                <p>디마레 토마토 스페셜</p>
+                <p style="font-size: small;">토마토 소스와 해살물 & 치즈로 맛을 낸 오븐 파스타</p><br>
+                <p>만조 크림 파스타</p>
+                <p style="font-size: small;">안심과 버섯 크림이 어우러진 고소한 파스타</p><br>
+                <p>알리오 올리오</p>
+                <p style="font-size: small;">마늘과 페퍼론치노로 맛을 낸 파스타</p><br>
+            </div>
+            <hr>
+            <div class="col-lg-12 col-mn-12">
+                <p><strong>Reservation</strong></p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <label for="name">이름:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <label for="phone">전화번호:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <label for="time">예약 시간:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <label for="people">예약 인원:</label>
+                <input type="number" id="people" name="people" min="1" max="10" required>
+                <input type="submit" value="예약하기">
+            </div>
+        </div>
     </div>
+    
 </body>
 </html>
