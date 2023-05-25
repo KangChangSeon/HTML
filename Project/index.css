@@ -1,0 +1,49 @@
+@import url(fonts.css);
+body, html { 
+    font-family: font1; 
+    width: 100%; 
+    height: 100%;  
+    margin: 0; 
+    padding: 0;}
+    
+    label {
+        font-weight: bold;
+        margin-right: 10px;
+    }
+    input[type=submit] {
+        cursor: pointer;
+    }
+    input[type=submit]{
+        border-radius: 4px;
+        background-color: #4CAF50;
+    }
+    button[type=submit]{
+        border-radius: 4px;
+    }
+    h3{
+        text-align: center; 
+        text-shadow: 2px 2px 4px black; 
+        color: white;
+    }
+    .tracking-in-expand{-webkit-animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both}
+    @-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+    #menubar{
+        background: black;
+    }
+    #menubar ul{
+        margin: 0;
+        padding: 0;
+        width: 567px;
+    }
+    #menubar ul li{
+        display: inline-block;
+        list-style-type: none;
+        padding: 0px 15px;
+    }
+    #menubar ul li a{
+        color: white;
+        text-decoration: none;
+    }
+    #menubar ul li a:hover{
+        color: gray;
+    }
