@@ -17,6 +17,9 @@ body, html {
         border-radius: 4px;
         background-color: #4CAF50;
     }
+    input:hover, textarea:hover{
+        background-color: aliceblue;
+    }
     button[type=submit]{
         border-radius: 4px;
     }

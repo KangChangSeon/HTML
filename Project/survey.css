@@ -31,6 +31,9 @@ input [type=time] {
       border: 1px solid #ccc;
       border-radius: 4px;
 }
+textarea:hover{
+      background-color: aliceblue;
+}
   button[type=submit] {
       margin-left: 45%;
       background-color: #4CAF50;
